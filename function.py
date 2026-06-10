@@ -21,11 +21,26 @@
 # print_6_times()
 
 #example of function with loop 
-def print_x_times(paramter, loop_amount):
+# def print_y_times(paramter, loop_amount = 2):
+#     count = 0
+#     while count <= loop_amount:
+#      print(count, paramter)
+#      count += 1
+#      return loop_amount
+# print('isha')
+# print_y_times('exam')    # we can add loop amount here to ('exma', 2)
+
+# specifiying and returning value
+
+
+
+#example of function with loop  and returing loop value count
+def print_x_times(paramter, loop_amount = 5):
     count = 0
     while count <= loop_amount:
      print(count, paramter)
      count += 1
-#call
+    return f'the loop amount is {loop_amount}'
 print('isha')
-print_x_times('exam',2)    
+test = print_x_times('exam') 
+print(test)   # we can add loop amount here to ('exma', 2)

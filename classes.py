@@ -87,28 +87,56 @@
 
 
 #Inheritance (one class can get the method and attributes of another class)
-class Human:
+# class Human:
      
-     def __init__(self, health):
-          self.health = health
+#      def __init__(self, health):
+#           self.health = health
           
-     def attack(self):
-          print("attack")
+#      def attack(self):
+#           print("attack")
 
 
-class Warrior(Human):
-    def __init__(self, health, defense):
-          super().__init__(health) #super this one call parent class
-          self.defense = defense
+# class Warrior(Human):
+#     def __init__(self, health, defense):
+#           super().__init__(health) #super this one call parent class
+#           self.defense = defense
       
-class Barbarian(Human):
-    def __init__(self, health, damage):
-          super().__init__(health)
-          self.damage = damage
+# class Barbarian(Human):
+#     def __init__(self, health, damage):
+#           super().__init__(health)
+#           self.damage = damage
 
-warrior = Warrior(50,5.5)
-barbarian = Barbarian(100, 8.1)
-warrior.attack()
-barbarian.attack()
-print(warrior.health)
-print(warrior.defense)
+# warrior = Warrior(50,5.5)
+# barbarian = Barbarian(100, 8.1)
+# warrior.attack()
+# barbarian.attack()
+# print(warrior.health)
+# print(warrior.defense)
+
+
+#exercise : Create a monster class where you can set a health and damage attribute on creation
+# it should also inherit from a entity calss to get attack method that print attack and damge amount
+# 
+
+class Entity:
+    #  def __init__(self, attack):
+    #       self.attack = attack
+
+     def attack(self):
+          print(f"attack with {self.damage} damge")    
+
+
+class Monster(Entity):
+     def __init__(self, health, damage):
+          
+          self.health = health
+          self.damage = damage  
+
+     def __repr__(self):
+           return f'A monster with {self.health} hp'          
+
+monster = Monster(100, 30)
+print(monster.health)
+monster.attack()
+
+print(monster)

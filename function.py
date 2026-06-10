@@ -1,8 +1,10 @@
 # creating a function 
 def print_5_times():
-    print("hello this is function")
+    print("Today i am learning about function and how to call the function")
+    print()
 # call 
-print('print')
+print('Good morning everyone this is isha third day of learning python')
+print()
 print_5_times()
 
 
@@ -14,5 +16,6 @@ def print_6_times():
         isha += 1
 
 # call 
-print('print')
+print('lets print the isha 6 times')
+print()
 print_6_times()

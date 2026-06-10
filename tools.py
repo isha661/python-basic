@@ -8,15 +8,31 @@
 
 
 
-# Single line if statement
-user_name = str(input("Enter your name : "))
-user_age = int(input("Enter the age of isha: "))
-# user_status = "Adult" if user_age>=18 else"minor" #this is single line
+# # Single line if statement
+# user_name = str(input("Enter your name : "))
+# user_age = int(input("Enter the age of isha: "))
+# # user_status = "Adult" if user_age>=18 else"minor" #this is single line
 
-# # if isha_age < 18:
-# #     isha_status = "minor"
-# # else:
-# #     isha_status = "adult"
+# # # if isha_age < 18:
+# # #     isha_status = "minor"
+# # # else:
+# # #     isha_status = "adult"
 
-# print(f"{user_name} is {user_status}")      
-print(f"{user_name} is {user_age} years old. The person is a {"adult" if user_age >=18 else "minor"}.")  
+# # print(f"{user_name} is {user_status}")      
+# print(f"{user_name} is {user_age} years old. The person is a {"adult" if user_age >=18 else "minor"}.")  
+
+
+
+
+
+# List Comprehension
+
+#this is long
+# simple_list = []
+# for i in range(1,11,1):
+#     simple_list.append(i)
+# print(simple_list)
+
+#actual list comprehension
+simple_list = [i for i in range(1,11,1)]
+print(simple_list)

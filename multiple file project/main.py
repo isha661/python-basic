@@ -9,11 +9,11 @@
 
 
 ####next way
-from support import Test, var, add_2_numbers
+# from support import * # or Test, var, add_2_numbers 
 
-test = Test()
-print(test.a)
-test.some_method()
+# test = Test()
+# print(test.a)
+# test.some_method()
 
-print(var)
-print(add_2_numbers(2,3))
+# print(var)
+# print(add_2_numbers(2,3))
